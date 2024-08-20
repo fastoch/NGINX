@@ -54,4 +54,12 @@ NGINX as a proxy server allows you to cache responses from backend server for fr
   - having a single entry point (the NGINX proxy server) increases the security
   - this also allows for centralized access control, and centralized logging & monitoring
 
+### Encrypted communication
+
+- Since we only have one entry point, we can focus all our efforts to securing that one proxy server in all aspects.
+- One important security measure is **encrypted communication**
+- NGINX can handle TLS encryption and decryption
+- front-end will send encrypted data to the proxy
+
+
 @5
