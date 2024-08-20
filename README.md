@@ -60,6 +60,14 @@ NGINX as a proxy server allows you to cache responses from backend server for fr
 - One important security measure is **encrypted communication**
 - NGINX can handle TLS encryption and decryption
 - front-end will send encrypted data to the proxy
+- the NGINX proxy server will forward the data to the web server
+- the web server will decrypt the data
+- you can configure your proxy to deny non-encrypted requests
 
+### Compression
 
-@5
+- NGINX proxy can also compress the response to reduce bandwidth usage and improve load times
+- 
+- 
+
+@7
