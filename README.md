@@ -71,6 +71,25 @@ NGINX as a proxy server allows you to cache responses from backend server for fr
 
 ## NGINX configuration
 
+- the main config file is typically named `nginx.conf` and is usually located in the `/etc/nginx/` folder
+- to set up the server's behavior, we need to use a custom syntax comprising **directives** and **blocks**
+- this is where we will define whether we want our NGINX server to be a web server, or a proxy server
+- we do that by configuring whether it should forward the traffic to other web servers, or whether it should be serving files itself
+- you can configure which port you want your nginx server to listen on
+  
+![image](https://github.com/user-attachments/assets/10c2c66e-fa5e-4f12-9a6f-f65fa5eea37d)
+
+- the "location" directive defines how the server should process specific types of requests
+- in there, you need to specify the location that contains your files
+
+But, as we learnt, communicating on port 80 (HTTP) is insecure and we want to encrypt all communication.  
+- to configure that in NGINX, we tell the http server to route any traffic coming on port 80 to the HTTPS endpoint
+- and then we configure the https server so it serves content over HTTPS with SSL/TLS configured
+- this https server needs to know:
+  - the location of the files it will serve
+  - the location of the SSL or TLS certificates (public and private keys)
+
+![image](https://github.com/user-attachments/assets/498d03a1-eb9f-4480-915f-d77fcf3dfdae)
 
 
-@8
+@10
