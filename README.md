@@ -64,10 +64,13 @@ NGINX as a proxy server allows you to cache responses from backend server for fr
 - the web server will decrypt the data
 - you can configure your proxy to deny non-encrypted requests
 
-### Compression
+### Compression & Segmentation
 
-- NGINX proxy can also compress the response to reduce bandwidth usage and improve load times
-- 
-- 
+- NGINX proxy can compress the response to reduce bandwidth usage and improve load times
+- NGINX also supports segmentation, which means one big file can be segmented into multiple chunks
 
-@7
+## NGINX configuration
+
+
+
+@8
