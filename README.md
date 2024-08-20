@@ -20,6 +20,13 @@ Then, the Web became popular and you had millions of requests for the same websi
 - we need multiple servers to handle that load
 - but which server will handle which request?
 
+Besides being used as a web server, NGINX can also act as a **load balancer**. 
+- NGINX distributes incoming traffic across multiple backend servers
+- it acts as a proxy server
+- the way it distributes the load depends on the selected algorithm
 
+Some Load balancing methods include:
+- least connections: routes traffic to the server with the fewest active connections
+- 
 
 ## What is NGINX used for?
