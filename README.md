@@ -37,6 +37,8 @@ To recap, NGINX is:
 - a Proxy server
   - and the load balancing role is just one of the functionalities of NGINX Proxy.
 
+---
+
 ## What are NGINX other features?
 
 ### Caching
@@ -69,6 +71,8 @@ NGINX as a proxy server allows you to cache responses from backend server for fr
 
 - NGINX proxy can compress the response to reduce bandwidth usage and improve load times
 - NGINX also supports segmentation, which means one big file can be segmented into multiple chunks
+
+---
 
 ## NGINX configuration
 
@@ -112,6 +116,8 @@ The caching configuration includes multiple elements like:
 
 ![image](https://github.com/user-attachments/assets/c9ca6bb1-2e31-490b-bce9-a48d3415edec)  
 
+---
+
 ## NGINX as a Kubernetes Ingress Controller
 
 ### What is an Ingress controller?
@@ -125,14 +131,30 @@ The caching configuration includes multiple elements like:
 
 There are actually many ingress controller implementations out there for K8s, but NGINX is one of the most popular.
 
-## NGINX load balancer VS Cloud load balancer
+### NGINX load balancer VS Cloud load balancer
 
 You may be thinking: "Doesn't each cloud platform have its own load balancer? Why do I need nginx as a load balancer?"  
 - You actually need both
-- Nginx ingress controller acts as a load balancer inside the K8s cluster
-- 
+- Nginx ingress controller acts as a load balancer inside the K8s cluster 
+- since the Nginx ingress controller lives inside the K8s cluster, it is not publicly accessible
+- the public entry point for the browser requests is the Cloud load balancer
+- the Cloud load balancer forwards the requests to the Nginx ingress controller
+- the Nginx ingress controller will then forwards the requests internally to the appropriate K8s service
+
+![image](https://github.com/user-attachments/assets/adc30476-2fa2-4288-8649-0491370dfccf)  
+
+- this way, the cluster component is **never directly exposed** to public access
+
+---
+
+## NGINX vs Apache
+
+- Apache was released in 1995 (like JavaScript)
+- Nginx was released in 2004
+- They are both widely used with the same functionalities
+- The major benefit of Nginx is that it's faster and more lightweight
+
+![image](https://github.com/user-attachments/assets/73e82df3-75e8-485d-bc0a-482548bf0d7a)
 
 
 
-
-@12
