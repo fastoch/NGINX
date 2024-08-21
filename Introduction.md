@@ -1,6 +1,7 @@
 # NGINX
 
-What is NGINX - https://www.youtube.com/watch?v=iInUBOVeBCc  
+What is NGINX - https://www.youtube.com/watch?v=iInUBOVeBCc - TechWorld with Nana  
+
 Official documentation: https://nginx.org/en/docs/beginners_guide.html 
 
 ## What is NGINX and why was it created?
