@@ -46,8 +46,5 @@ src = https://www.youtube.com/watch?v=9nyiY-psbMs&t=54s
 It's entirely possible to have Nginx as acting as your reverse proxy with several Apache web servers behind it, or vice versa.
 
 ---
-
-It's important to understand that **HTTP traffic** is not just made of web pages, there's also **REST calls**.  
-And REST calls power just about every web and mobile app there is.
-
+EOF
 
