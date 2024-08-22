@@ -25,4 +25,29 @@ src = https://www.youtube.com/watch?v=9nyiY-psbMs&t=54s
   - the outside world "believes" it's the proxy that processes the requests and sends the responses
 - CACHING:
   - a proxy server can cache some of the resources, and then it can serve them up on its own
-  -  
+  - this feature is saving time and network throughput
+- COMPRESSION:
+  - happens between the proxy server and the client (the web browser)
+  - decreases load times
+ 
+# They're different because...
+
+- Nginx is faster
+- Nginx is easier to configure
+- Nginx is better suited when you need to handle simple static files
+- Nginx is more popular in the container space (Docker & K8s)
+- Apache is better at handling dynamic content
+- You can do a lot more with Apache, albeit at the expense of speed in some cases
+
+---
+
+# They don't need to fight
+
+It's entirely possible to have Nginx as acting as your reverse proxy with several Apache web servers behind it, or vice versa.
+
+---
+
+It's important to understand that **HTTP traffic** is not just made of web pages, there's also **REST calls**.  
+And REST calls power just about every web and mobile app there is.
+
+
