@@ -2,6 +2,10 @@ src = https://www.youtube.com/watch?v=7VAI73roXaY - Laith Academy
 
 ---
 
+# NGINX Terminology
+
+
+
 # Configuration
 
 - Once you have installed nginx, the file you should look for is `nginx.conf`
@@ -18,6 +22,8 @@ src = https://www.youtube.com/watch?v=7VAI73roXaY - Laith Academy
 - 
 
 
-# Using Nginx as a Proxy Server
+# Using Nginx as a Proxy Server (Load Balancer)
 
-@10/50
+
+
+@11/50
